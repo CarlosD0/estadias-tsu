@@ -1,0 +1,124 @@
+    /* Estilos del banner */
+.seccion-banner{
+    position: relative; /* Posicionado en relación a la página */
+    width: 100%; /* Tamaño que abarca el 100% de la pantalla */
+    height: clamp(11rem, 16.5vw, 22rem); /* Indicar un tamaño min, uno relativo a la pantalla y uno max */
+    background-image: url(../img/loo.png); /* Imagnen como fondo */
+    background-size: max(75rem,100%); /* Tamaño de la imagen de fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+}
+    /* Estilos del contenedor del eslogan */
+.secc-eslogan{
+    position: absolute; /* Posicionado en relación con su antepasado posicionado más cercano */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con transparencia */
+    inset: 0 0 0 0; /* Espaciado de 0 en las 4 coordenadas */
+    
+         /* Acomodar en forma de columna y centrar el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;  /* Centra el texto */    
+    color: white;  /* Color del texto */
+}
+    /* Estilos del texto del banner */
+.secc-eslogan p{
+    font-family: 'Source Serif Pro', serif;  /* Fuente tipografica */
+    font-size: clamp(1.8rem, 3.6vw, 5.4rem);  /* Tamaño de fuente */
+}
+
+    /* Estilos del buscador */
+.buscador{
+    margin: 20px auto;  /* Indica un margen de 20px arriba y abajo, y un margen automatico horizontalmente */ 
+    width: min(90%, 50rem);  /* Tamaño del contenido, tomara el tamaño minimo ente 50rem y el 90% de la pantalla */ 
+    font-family: 'Source Serif Pro',serif;
+}
+
+    /* Estilos del contenedor de las recetas tradicionales */
+.cont-trad{
+    max-width: 90%;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 20px;  /* Espaciado de 20px */
+    border-radius: 10px;  /* Esquinas del contenedor redondeadas */
+    background: #B38E5D;  /* Fondo con degradado */
+    font-family: 'Source Serif Pro',serif;
+    color: #523114;
+}
+    /* Efecto de sombra en el contenedor */
+.sombra{
+    box-shadow: 2px 6px 14px 0px rgba(69, 63, 63, 0.53);
+    -webkit-box-shadow: 2px 6px 14px 0px rgba(69, 63, 63, 0.53);
+    -moz-box-shadow: 2px 6px 14px 0px rgba(69, 63, 63, 0.53);
+}
+    /* Estilos del contenedor de las cards */
+.recetas .box-container{
+    display: grid;  /* Dividir el contenedor en cuadriculas */
+    grid-template-columns: repeat(auto-fit, min(20rem, 100%));  /* Define el tamaño de las cuadrillas */
+    justify-content: center;  /* Centrar el contenido */
+    gap: 1.5rem;  /* Separación de las cuadrillas */
+    padding-top: 2rem;  /* Espaciado superior de 2rem */
+}
+
+    /* Estilos de la card */
+.recetas .box-container .box{
+    background-color: white;
+}
+    /* Estilos del contenedor de la imagen */
+.recetas .box-container .box .image{
+    height: 60%;
+    overflow: hidden;
+    width: 100%;
+}
+    /* Estilos de la imagen */
+.recetas .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.recetas .box-container .box .image:hover img{
+    transform: scale(1.2);
+}
+    /* Estilos del contenedor que abarca el texto */
+.recetas .box-container .box .content{
+    padding: .5rem;
+}
+    /* Estilos del nombre de la receta */
+.recetas .box-container .box .content .title{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #446600;
+    text-decoration: none;
+}
+.recetas .box-container .box .content .title:hover{
+    color: black;
+}
+    /* Estilos del nombre del creador de la receta */
+.recetas .box-container .box .content span{
+    color: gray;
+    display: block;
+    padding-top: .5rem; 
+    font-size: .9rem;
+}
+    /* Estilos de la descripción */
+.recetas .box-container .box .content p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #523114;
+    padding: .4rem;
+}
+
+    /* Estilos del contenedor de las variantes de los usuarios */
+.cont-va{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center; 
+    padding: 20px;
+    font-family: 'Source Serif Pro',serif;
+    color: #446600;
+}

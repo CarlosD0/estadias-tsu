@@ -1,0 +1,24 @@
+    /* Estilos del contenedor de la tabla recetas */
+.cont-re-trad{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #B38E5D; 
+}
+    /* Efecto de sombra en el contenedor */
+.sombra{
+    box-shadow: 2px 6px 14px 0px rgba(69, 63, 63, 0.53);
+    -webkit-box-shadow: 2px 6px 14px 0px rgba(69, 63, 63, 0.53);
+    -moz-box-shadow: 2px 6px 14px 0px rgba(69, 63, 63, 0.53);
+}
+    /* Estilos del contenido de la tabla */
+td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10rem;
+}
+
+/* #DE4828, #E8672A,#E8672A, #DE4828 */
